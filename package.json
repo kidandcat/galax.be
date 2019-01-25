@@ -1,0 +1,11 @@
+{
+  "name": "galax.be",
+  "version": "0.0.1",
+  "description": "Galax.be Javascript Client",
+  "main": "index.js",
+  "author": "Jairo Caro-Accino Viciana",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io-client": "^2.2.0"
+  }
+}
