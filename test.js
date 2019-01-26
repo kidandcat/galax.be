@@ -5,8 +5,10 @@ const token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiIxZjljZjM1Yi0z
 ;(async () => {
   const db = await Galax(token)
   for (let y = 0; y < 100; y++) {
-    await db.set('jairo', 25)
-    const age = await db.get('jairo')
+    console.time("dbsave"+y);
+    await db.set('jairo'+y, 25)
+    const age = await db.get('jairo'+y)
     console.log(y + " Jairo's Age", age)
+    console.timeEnd("dbsave"+y)
   }
 })()
