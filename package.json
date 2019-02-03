@@ -1,6 +1,6 @@
 {
   "name": "galax.be",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Galax.be Javascript Client",
   "main": "client.js",
   "author": "Jairo Caro-Accino Viciana",
