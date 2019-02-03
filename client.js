@@ -13,7 +13,7 @@ module.exports = {
   },
   open: (jwt) => new Promise((resolve, reject) => {
     let t
-    ws = new WebSocket('wss://server.galax.be')
+    ws = new WebSocket('ws://broker.galax.be:4444')
     ws.on('open', () => {
       ws.send(pack('authenticate', jwt))
       t = setTimeout(() => {
